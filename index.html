@@ -27,7 +27,7 @@
       <button class="btn btn-primary">Homes</button>
     </nav>
   </header>
-  <main>
+  <main class="bg-white">
     <div class="container-fluid">
       <div class="row my-3">
         <div class="col-6 m-auto" id="listing-form">
@@ -72,10 +72,10 @@
           </form> -->
         </div>
       </div>
-      <div class="row" id="listings">
-        <!-- FIXME Step 3: Build out a template for our model -->
-        <!-- STUB Car template -->
-        <!-- <div class="col-4 p-4">
+      <!-- FIXME Step 3: Build out a template for our model -->
+      <!-- STUB Car template -->
+      <!-- <div class="row" id="listings">
+        <div class="col-4 p-4">
           <div class="card">
             <img src="https://www.autotrader.com/wp-content/uploads/2020/02/vueredline-1.jpg" class="card-img-top"
               alt="vue">
@@ -89,8 +89,61 @@
               </button>
             </div>
           </div>
+        </div>
+      </div> -->
+      <section class="row my-3">
+        <div class="col-6 m-auto" id="listing-form">
+          <form onsubmit="app.carsController.createCar()">
+            <div class="form-floating mb-3">
+              <input required type="url" class="form-control" id="home-img" placeholder="Home Image" name="img">
+              <label for="home-image">Image(s)</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input required type="number" class="form-control" id="home-price" placeholder="Home Price" name="price">
+              <label for="home-price">Price</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input required type="number" class="form-control" id="home-rooms" placeholder="Home Rooms" name="rooms">
+              <label for="home-rooms">Rooms</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input required type="number" class="form-control" id="home-bathrooms" placeholder="Home Bathrooms"
+                name="bathrooms">
+              <label for="home-bathrooms">Bathrooms</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input required type="number" class="form-control" id="home-squarefeet" placeholder="Home Squarefeet"
+                name="squarefeet">
+              <label for="home-squarefeet">Squarefeet</label>
+            </div>
+            <button type="submit" class="btn btn-success mt-3">Submit</button>
+            <button type="reset" class="btn btn-outline-danger mt-3">Reset</button>
+          </form>
+        </div>
+      </section>
+
+
+      <!-- STUB Home template -->
+      <!-- <div class="col-4 p-4">
+          <div class="card">
+            <img
+              src="https://www.buildidaho.com/Documents%20and%20Settings/54/Site%20Documents/Slider/Features/Boise-Idaho-Homes-for-Sale-1.jpg"
+              alt="big house">
+            <div class="card-body">
+              <h5 class="card-title d-flex justify-content-between mb-2">
+                <span>Price</span>
+                <span>Square Feet</span>
+              </h5>
+              <h5 class="card-title d-flex justify-content-between mb-2">
+                <span>rooms</span>
+                <span>bathrooms</span>
+              </h5>
+              <button class="btn btn-primary">
+                See Details
+              </button>
+            </div>
+          </div>
         </div> -->
-      </div>
     </div>
   </main>
   <footer class="bg-dark text-light">
